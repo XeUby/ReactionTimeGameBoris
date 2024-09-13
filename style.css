@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Фиксированная ширина для равномерного отображения */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#start-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-button.green {
+    background-color: green; /* Добавляем стиль для класса green */
+}
+
+#result {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#best-result {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+#fact {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #555;
+}
+
+#try-again-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%; /* Адаптивная ширина для мобильных устройств */
+    }
+}
